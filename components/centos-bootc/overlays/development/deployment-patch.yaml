@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: centos-bootc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/skabashn-tenant/centos-bootc/centos-bootc@sha256:6dc03860d9803553f4091b2d02a1a557437a45364beef02102d1c863cecef5bc
+        name: container-image
+        resources: {}
+status: {}
